@@ -1,0 +1,57 @@
+{
+  "expo": {
+    "name": "Trophi",
+    "slug": "trophi",
+    "version": "beta-1.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "pt.zabunba.trophi"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "minSdkVersion": 29,
+      "package": "pt.zabunba.trophi",
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "plugins": [
+      "@react-native-community/datetimepicker",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "A aplicação necessita de acesso à câmara para ler os códigos de barras e datas de validade dos produtos."
+        }
+      ],
+      "expo-font",
+      "expo-sqlite",
+      "expo-background-task",
+      "expo-secure-store"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "b5aa453c-d5ee-4dfa-9fda-fb5dc4c8dd5a"
+      }
+    }
+  }
+}

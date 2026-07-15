@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trophi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/devices.css@latest/dist/devices.min.css" rel="stylesheet">
+ 
+    <style>
+        .device-wrap {
+            transform: scale(.82);
+            transform-origin: center;
+        }
+
+        @media (max-width: 992px) {
+            .device-wrap {
+                transform: scale(.65);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .device-wrap {
+                transform: scale(.50);
+            }
+        }
+
+        @media (max-width: 576px) {
+            .device-wrap {
+                transform: scale(.38);
+            }
+        }
+    </style>
+
+</head>
+<body style="font-family: 'Poppins', sans-serif; background-color:rgba(0,0,0,0.98); 
+        background-image:
+            linear-gradient(rgba(16,245,162,.04) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(16,245,162,.04) 1px, transparent 1px);
+        background-size:3rem 3rem;
+     " >
+<nav class="navbar navbar-expand-lg border-bottom" style="background-color:rgb(8,8,8);border-color:#1d1d1d!important;">
+    <div class="container">
+        <a class="navbar-brand fw-semibold" href="#" style="color:#10f5a2;">
+            Trophi
+        </a>
+
+        <button class="navbar-toggler border-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#history">History</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#features">Features</a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link text-light" href="#technologies">Technologies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#developer">Developer</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<section class="container py-5" id="home">
+    <div class="row align-items-center g-5">
+
+        <div class="col-lg-6">
+
+            <span class="badge rounded-pill px-3 py-2 mb-3 d-inline-flex align-items-center gap-2"
+                style="background:#10241d;color:#10f5a2;">
+                <span style="width:8px;height:8px;background:#10f5a2;border-radius:50%;display:inline-block;"></span>
+                Beta · v1.0 — Available Now
+            </span>
+
+            <h1 class="display-4 fw-bold" style="color:rgb(255,255,255,0.8)">
+                Your Kitchen,<br>
+                <span style="color:#10f5a2;">Managed Intelligently</span>
+            </h1>
+            <br>
+
+            <div class="d-flex flex-wrap gap-3 mb-4">
+                <a href="#" class="btn px-4 py-2 fw-semibold"
+                style="background:rgb(20,20,20);color:#10f5a2;">
+                    Download
+                </a>
+
+                <a href="#" class="btn px-4 py-2 fw-semibold"
+                style="background:rgb(20,20,20);color:rgb(255,255,255,0.7);">
+                    Check the code
+                </a>
+            </div>
+
+            <div class="d-flex border rounded overflow-hidden">
+
+                <div class="text-center p-3 flex-fill" style="background-color: rgba(0,0,0,0.6);">
+                    <h4 class="fw-bold mb-0" style="color:#10f5a2;">100%</h4>
+                    <small style="color:rgb(255,255,255,0.8)">Offline & Private</small>
+                </div>
+
+                <div class="text-center p-3 flex-fill border-start" style="background-color: rgba(0,0,0,0.6);">
+                    <h4 class="fw-bold mb-0" style="color:#10f5a2;">5000</h4>
+                    <small style="color:rgb(255,255,255,0.8)">Recipes</small>
+                </div>
+
+                <div class="text-center p-3 flex-fill border-start" style="background-color: rgba(0,0,0,0.6);">
+                    <h4 class="fw-bold mb-0" style="color:#10f5a2;">ML KIT</h4>
+                    <small style="color:rgb(255,255,255,0.8)">Barcode OCR</small>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+        <div class="col-lg-6 d-flex justify-content-center">
+
+            <div class="device-wrap">
+                <div class="device device-google-pixel-6-pro">
+                    <div class="device-frame">
+                        <img class="device-screen" src="assets/home.png" alt="Trophi">
+                    </div>
+                    <div class="device-stripe"></div>
+                    <div class="device-header"></div>
+                    <div class="device-sensors"></div>
+                    <div class="device-btns"></div>
+                    <div class="device-power"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<section class="container py-5" id="history">
+
+    <div class="text-center mb-5">
+        <span class="badge rounded-pill px-3 py-2 mb-3 d-inline-flex align-items-center gap-2"
+              style="background:#10241d;color:#10f5a2;">
+            History
+        </span>
+
+        <h2 class="fw-bold text-light">
+            The Journey to
+            <span style="color:#10f5a2;">Trophi</span>
+        </h2>
+
+        <p class="text-light opacity-75">
+            From a simple school project to a modern offline-first food inventory application.
+        </p>
+    </div>
+
+    <div class="row g-4">
+
+        <div class="col-lg-4">
+            <div class="h-100 p-4 rounded-4"
+                 style="background:rgba(8,8,8,.75);">
+                <h4 style="color:#10f5a2;">2022 — <a href="https://github.com/zabunba/cummy-android" style="color:#10f5a2;">Cummy</a></h4>
+
+                <p class="text-light opacity-75 mb-0">
+                    The first version was developed as the final project for my
+                    Professional Course in Computer Systems Management and Programming.
+                    Built with Java and XML for Android 8.0, it included manual food
+                    management and local storage, earning a final grade of
+                    <strong>17/20</strong>.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="h-100 p-4 rounded-4"
+                 style="background:rgba(8,8,8,.75);">
+                <h4 style="color:#10f5a2;">Lessons Learned</h4>
+
+                <p class="text-light opacity-75 mb-0">
+                    Cummy highlighted several limitations, including manual product
+                    entry, a basic user interface, unencrypted storage, and limited
+                    scalability. These challenges inspired a complete redesign.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="h-100 p-4 rounded-4"
+                 style="background:rgba(8,8,8,.75);">
+                <h4 style="color:#10f5a2;">2026 — Trophi</h4>
+
+                <p class="text-light opacity-75 mb-0">
+                    Trophi rebuilds the original idea from the ground up with an
+                    offline-first architecture, barcode scanning, OCR, recipe
+                    recommendations, dietary filters, stronger privacy, and a modern
+                    mobile experience.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<section class="container py-5" id="features" >
+
+    <div class="text-center mb-5">
+        <span class="badge rounded-pill px-3 py-2 mb-3 d-inline-flex align-items-center gap-2"
+              style="background:#10241d;color:#10f5a2;">
+            Features
+        </span>
+
+        <h2 class="fw-bold text-light">
+            Everything You Need to
+            <span style="color:#10f5a2;">Manage Your Kitchen</span>
+        </h2>
+
+        <p class="text-light opacity-75 mx-auto" style="max-width:700px;">
+            Trophi provides all the tools you need to organize your pantry,
+            reduce food waste, and simplify your daily cooking.
+        </p>
+    </div>
+
+    <div class="row g-4">
+
+        <div class="col-md-6 col-lg-4">
+            <div class="h-100 p-4 rounded-4"
+                 style="background:rgba(8,8,8,0.75);border: 0;">
+                <h4 style="color:#10f5a2;text-align: center;">Barcode Scanner</h4>
+                <p class="text-light opacity-75 mb-0 text-center">
+                    Scan products instantly and add them to your inventory.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div class="h-100 p-4 rounded-4"
+                 style="background:rgba(8,8,8,0.75);border: 0;">
+                <h4 style="color:#10f5a2;text-align: center;">Expiration Tracking</h4>
+                <p class="text-light opacity-75 mb-0 text-center">
+                    Get notified before your food expires.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div class="h-100 p-4 rounded-4"
+                 style="background:rgba(8,8,8,0.75);border: 0;">
+                <h4 style="color:#10f5a2;text-align: center;">Smart Recipes</h4>
+                <p class="text-light opacity-75 mb-0 text-center">
+                    Discover recipes using ingredients you already own.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div class="h-100 p-4 rounded-4"
+                 style="background:rgba(8,8,8,0.75);border: 0;">
+                <h4 style="color:#10f5a2;text-align: center;">100% Offline</h4>
+                <p class="text-light opacity-75 mb-0 text-center">
+                    Your data stays on your device with no cloud required.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div class="h-100 p-4 rounded-4"
+                style="background:rgba(8,8,8,0.75);border:0;">
+                <h4 style="color:#10f5a2;text-align:center;">eNutriScore</h4>
+                <p class="text-light opacity-75 mb-0 text-center">
+                    Recipes receive an eNutriScore based on ingredients such as sugar, salt, fats, and oils, helping you make healthier choices.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div class="h-100 p-4 rounded-4"
+                style="background:rgba(8,8,8,0.75);border:0;">
+                <h4 style="color:#10f5a2;text-align:center;">Diets & Allergies</h4>
+                <p class="text-light opacity-75 mb-0 text-center">
+                    Filter products and recipes based on dietary preferences and allergies, including Vegetarian, Vegan, Keto, Paleo, Gluten-Free, Dairy-Free, Nut-Free, Shellfish-Free, Egg-Free, and Soy-Free.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+<section class="container py-5" id="technologies">
+
+    <div class="text-center mb-5">
+        <span class="badge rounded-pill px-3 py-2 mb-3 d-inline-flex align-items-center gap-2"
+              style="background:#10241d;color:#10f5a2;">
+            Technologies
+        </span>
+
+        <h2 class="fw-bold text-light">
+            Powered by
+            <span style="color:#10f5a2;">Modern Technologies</span>
+        </h2>
+
+        <p class="text-light opacity-75">
+            Built with reliable technologies focused on performance, privacy and simplicity.
+        </p>
+    </div>
+
+    <div class="row g-4 text-center" style="background-color: rgb(8, 8, 8, 0.75);padding: 1rem;border-radius: 20px;">
+
+        <div class="col-6 col-md-4 col-lg-2">
+            <i class="bi bi-phone-fill fs-1" style="color:#10f5a2;"></i>
+            <h6 class="text-light mt-3">React Native</h6>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-2">
+            <i class="bi bi-lightning-charge-fill fs-1" style="color:#10f5a2;"></i>
+            <h6 class="text-light mt-3">Expo</h6>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-2">
+            <i class="bi bi-database-fill fs-1" style="color:#10f5a2;"></i>
+            <h6 class="text-light mt-3">SQLite</h6>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-2">
+            <i class="bi bi-upc-scan fs-1" style="color:#10f5a2;"></i>
+            <h6 class="text-light mt-3">Barcode Scan</h6>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-2">
+            <i class="bi bi-eye-fill fs-1" style="color:#10f5a2;"></i>
+            <h6 class="text-light mt-3">OCR</h6>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-2">
+            <i class="bi bi-shield-lock-fill fs-1" style="color:#10f5a2;"></i>
+            <h6 class="text-light mt-3">Offline First</h6>
+        </div>
+
+    </div>
+</section>
+<section class="container py-5" id="about">
+
+    <div class="row align-items-center g-5">
+
+        <div class="col-lg-6">
+
+            <span class="badge rounded-pill px-3 py-2 mb-3 d-inline-flex align-items-center gap-2"
+                  style="background:#10241d;color:#10f5a2;">
+                About
+            </span>
+
+            <h2 class="fw-bold text-light">
+                Why
+                <span style="color:#10f5a2;">Trophi?</span>
+            </h2>
+
+            <p class="text-light opacity-75">
+                Trophi was created to help people take control of their kitchen in a
+                simple, private and efficient way. Instead of relying on cloud
+                services, all your information stays securely on your device.
+            </p>
+
+            <p class="text-light opacity-75">
+                By combining barcode scanning, expiration tracking and recipe
+                suggestions, Trophi helps reduce food waste while making everyday
+                meal planning easier.
+            </p>
+
+            <div class="row mt-4">
+
+                <div class="col-6 mb-3">
+                    <h3 style="color:#10f5a2;">Offline</h3>
+                    <small class="text-light opacity-75">No internet connection needed</small>
+                </div>
+
+                <div class="col-6 mb-3">
+                    <h3 style="color:#10f5a2;">Private</h3>
+                    <small class="text-light opacity-75">Your data never leaves your device</small>
+                </div>
+
+                <div class="col-6">
+                    <h3 style="color:#10f5a2;">Fast</h3>
+                    <small class="text-light opacity-75">Barcode Scan</small>
+                </div>
+
+                <div class="col-6">
+                    <h3 style="color:#10f5a2;">Open Data</h3>
+                    <a class="text-light opacity-75" href="https://pt.openfoodfacts.org/">Powered by Open Food Facts</a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-lg-6">
+
+            <div class="rounded-4 p-5 h-100"
+                 style="background:rgb(8, 8, 8, 0.75);border: none; height: 100%;">
+
+                <h4 style="color:#10f5a2;">Mission</h4>
+
+                <p class="text-light opacity-75 mb-0">
+                    Our mission is to reduce household food waste by providing a
+                    powerful offline-first application that makes food inventory,
+                    expiration management and meal planning accessible to everyone.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="container py-5" id="developer">
+
+    <div class="row align-items-center g-5">
+
+        <div class="col-lg-4 text-center">
+
+            <img src="https://avatars.githubusercontent.com/u/105364857?v=4"
+                 class="img-fluid rounded-circle border border-3"
+                 style="max-width:220px;border-color:#10f5a2!important;"
+                 alt="Developer">
+
+        </div>
+
+        <div class="col-lg-8">
+
+            <span class="badge rounded-pill px-3 py-2 mb-3 d-inline-flex align-items-center gap-2"
+                  style="background:#10241d;color:#10f5a2;">
+                Developer
+            </span>
+
+            <h2 class="fw-bold text-light">
+                Meet the
+                <span style="color:#10f5a2;">Developer</span>
+            </h2>
+
+       
+            <p class="text-light opacity-75">
+                Hi! I'm <strong>Rafael</strong>, a Software Engineering student who enjoys building useful software and learning how technology works.
+            </p>
+
+            <p class="text-light opacity-75 mb-4">
+                I'm interested in programming languages, operating systems, web technologies, and creating applications that solve everyday problems in a simple and practical way.
+            </p>
+
+            <div class="d-flex flex-wrap gap-3">
+
+                <a href="https://github.com/zabunba" class="btn px-4 py-2 fw-semibold"
+                   style="background:#10f5a2;color:#111;">
+                    GitHub
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<footer class="container-fluid border-top py-4 mt-5"
+        style="background-color:rgb(8,8,8);border-color:#1d1d1d!important;">
+
+    <div class="container text-center">
+
+        <small class="text-light opacity-75 text-center">
+            &copy; 2026 Trophi. All rights reserved.
+        </small>
+    </div>
+
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
